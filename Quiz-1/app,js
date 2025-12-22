@@ -1,0 +1,129 @@
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  Button,
+  FlatList,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
+
+const API_URL = "http://localhost:5000/tasks"; 
+// ⚠️ If using Android emulator later → use your local IP instead
+
+export default function App() {
+  const [tasks, setTasks] = useState([]);
+  const [title, setTitle] = useState("");
+
+  // 🔹 Fetch all tasks
+  const fetchTasks = async () => {
+    try {
+      const res = await fetch(API_URL);
+      const data = await res.json();
+      setTasks(data);
+    } catch (err) {
+      console.log("Fetch error:", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchTasks();
+  }, []);
+
+  // 🔹 Add task
+  const addTask = async () => {
+    if (!title.trim()) return;
+
+    await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title }),
+    });
+
+    setTitle("");
+    fetchTasks();
+  };
+
+  // 🔹 Toggle completed
+  const toggleTask = async (id, completed) => {
+    await fetch(`${API_URL}/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ completed: !completed }),
+    });
+
+    fetchTasks();
+  };
+
+  // 🔹 Delete task
+  const deleteTask = async (id) => {
+    await fetch(`${API_URL}/${id}`, {
+      method: "DELETE",
+    });
+
+    fetchTasks();
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.heading}>To-Do List</Text>
+
+      <TextInput
+        style={styles.input}
+        placeholder="New task..."
+        value={title}
+        onChangeText={setTitle}
+      />
+
+      <Button title="Add Task" onPress={addTask} />
+
+      <FlatList
+        data={tasks}
+        keyExtractor={(item) => item._id}
+        renderItem={({ item }) => (
+          <View style={styles.task}>
+            <TouchableOpacity
+              onPress={() => toggleTask(item._id, item.completed)}
+            >
+              <Text
+                style={[
+                  styles.text,
+                  item.completed && styles.completed,
+                ]}
+              >
+                {item.title}
+              </Text>
+            </TouchableOpacity>
+
+            <Button
+              title="❌"
+              onPress={() => deleteTask(item._id)}
+            />
+          </View>
+        )}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { padding: 20, marginTop: 40 },
+  heading: { fontSize: 24, marginBottom: 20 },
+  input: {
+    borderWidth: 1,
+    padding: 10,
+    marginBottom: 10,
+  },
+  task: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: 10,
+    borderBottomWidth: 1,
+  },
+  text: { fontSize: 18 },
+  completed: {
+    textDecorationLine: "line-through",
+    color: "gray",
+  },
+});
