@@ -17,86 +17,87 @@ Final-year / portfolio projects
 ✨ Features
 🛍️ Shopping
 
-Browse all fabrics with images & categories
+-Browse all fabrics with images & categories
 
-Featured products carousel
+-Featured products carousel
 
-Product details screen
+-Product details screen
 
-Fabric size chart & unit conversion
+-Fabric size chart & unit conversion
 
-Add to cart with quantity selection
+-Add to cart with quantity selection
 
 ❤️ Wishlist
 
-Save favorite products
+-Save favorite products
 
-Syncs with backend
+-Syncs with backend
 
-Persistent across sessions
+-Persistent across sessions
 
 🛒 Cart & Checkout
 
-Add / remove / update cart items
+-Add / remove / update cart items
 
-Live total calculation
+-Live total calculation
 
-Checkout flow
+-Checkout flow
 
-Cash on Delivery & Card payment UI
+-Cash on Delivery & Card payment UI
 
-Order success animation
+-Order success animation
 
 📦 Orders
 
-Place orders
+-Place orders
 
-View order history
+-View order history
 
-Order details with products & quantities
+-Order details with products & quantities
 
 👤 Authentication
 
-Signup & Login
+-Signup & Login
 
-JWT-based authentication
+-JWT-based authentication
 
-Persistent login using AsyncStorage
+-Persistent login using AsyncStorage
 
-Protected routes
+-Protected routes
 
 🧠 Tech Stack
-Frontend
+-Frontend
 
-React Native (Expo)
+-React Native (Expo)
 
-Redux Toolkit
+-Redux Toolkit
 
-React Navigation (Stack + Tabs)
+-React Navigation (Stack + Tabs)
 
-Axios
+-Axios
 
-AsyncStorage
+-AsyncStorage
 
-Lottie Animations
+-Lottie Animations
 
-Custom reusable UI components
+-Custom reusable UI components
 
-Backend
+-Backend
 
-Node.js
+-Node.js
 
-Express.js
+-Express.js
 
-MongoDB
+-MongoDB
 
-Mongoose
+-Mongoose
 
-JWT Authentication
+-JWT Authentication
 
-REST APIs
+-REST APIs
 
 📁 Project Structure
+
 Top-Fabrics-Retail/
 │
 ├── frontend/
@@ -125,7 +126,9 @@ Backend .env
 Create a .env file inside the backend folder:
 
 PORT=8000
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret
 
 ▶️ Running the Project Locally
@@ -163,15 +166,25 @@ Build APK:
 eas build -p android --profile preview
 
 🔗 API Overview
+
 Method	Endpoint	Description
+
 POST	/api/users/signup	User registration
+
 POST	/api/users/login	User login
+
 GET	/api/products	Get all products
+
 GET	/api/products/featured	Featured products
+
 POST	/api/cart/add	Add to cart
+
 GET	/api/cart/:userId	Get user cart
+
 POST	/api/orders/create	Create order
+
 GET	/api/orders/:userId	Get user orders
+
 🎨 UI Theme
 
 Luxury Black & Gold design
@@ -242,7 +255,8 @@ Thank you for supporting independent development!
 Feel free to customize, extend, and deploy your own store.
 
 
-🎥 App Demo Video Link:
+🎥 App Demo Video Link: "Browser= https://github.com/user-attachments/assets/0ddb5c83-048b-4e77-a19e-1f2c2748c2b9"
+
 
 
 https://github.com/user-attachments/assets/0ddb5c83-048b-4e77-a19e-1f2c2748c2b9
