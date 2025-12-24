@@ -14,7 +14,7 @@ The objective of this activity was to gain hands-on experience in:
 • Professional profile optimization  
 • Proposal writing and positioning  
 
-A total of **25 bids** were submitted for web and mobile application development projects.
+A total of 26 bids were submitted for web and mobile application development projects.
 
 ────────────────────────────────────
 
