@@ -218,6 +218,7 @@ Muhammed Hamza Khan
 Full Stack Developer for
 
 Mobile Applications / Web Applications
+
 ────────────────────────────────────
 
 📜 DISCLAIMER:
