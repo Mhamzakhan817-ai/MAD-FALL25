@@ -214,7 +214,9 @@ Links are provided inside individual project folders.
 👩‍💻 AUTHOR:
 
 Muhammed Hamza Khan
+
 Full Stack Developer for
+
 Mobile Applications / Web Applications
 ────────────────────────────────────
 
