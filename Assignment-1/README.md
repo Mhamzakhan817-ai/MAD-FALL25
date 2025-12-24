@@ -1,36 +1,90 @@
-# SkillSwap MVP (React Native)
+🤝✨ SKILL SWAP APP – FRONTEND
 
-This is a **Minimum Viable Product (MVP)** frontend for the **SkillSwap App**, built with **React Native**.  
-It allows students to swap skills in a simple, user-friendly interface with **Dark/Light Mode support**.
+────────────────────────────────────
 
-##Features
-**Login Screen**
-  Email: `8628@student.com`
-  Password: `abasyn123`
-  Shows error message if credentials are wrong.
-**Home Screen**
-  Displays a list of skill offers.
-  Tap on an offer to see details.
-  Navigate to **Create Post** and **Profile**.
-  Toggle between **Dark/Light Mode**.
+📱 PROJECT DESCRIPTION
 
-**Create Post Screen**
- Add a new skill offer (title & description).
- Newly created posts appear in the Home list.
+The Skill Swap App is a mobile application frontend built using React Native and designed as a Minimum Viable Product (MVP).
+The main idea of this app is to allow users to exchange skills with others instead of paying money.
+Users can showcase what they know, browse skill offers, and learn new skills from the community.
 
-**Offer Detail Screen**
-Shows details of a selected skill.
-Placeholder for future booking functionality.
+This project focuses only on the frontend implementation and uses dummy data for authentication and skill listings.
+It demonstrates core mobile app concepts such as navigation, state management, theming, and form handling.
 
-**Profile Screen**
-Displays user name, bio, and list of skills.
-(Future scope: add Logout button).
+────────────────────────────────────
 
-**Dark/Light Theme Toggle**
-User can switch themes with a toggle button.
+🚀 KEY FEATURES
 
-##Installation & Setup
+✔ Login screen with validation (dummy credentials)  
+✔ Skill listing and browsing (Home Feed)  
+✔ Create and post new skill offers  
+✔ View skill offer details  
+✔ User profile screen with bio and skills  
+✔ Dark / Light mode toggle  
+✔ Clean and simple navigation flow  
+✔ Mobile-first responsive UI  
+✔ Built as an MVP for learning and demonstration  
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Mhamzakhan817-ai/MAD-Assignment-1-8628-.git
+────────────────────────────────────
+
+🛠️ TECHNOLOGIES USED
+
+• React Native  
+• JavaScript  
+• Expo (compatible with Expo Snack)  
+• React Navigation (Stack Navigator)  
+• Context API (Theme Management)  
+• React Native UI Components  
+
+────────────────────────────────────
+
+📐 UML DIAGRAMS
+
+📌 Use Case Diagram
+
+Actors involved in the system:
+• User  
+• Admin  
+
+Main Use Cases:
+• Login  
+• Browse Skill Offers  
+• Create Skill Offer  
+• View Offer Details  
+• View Profile  
+• Toggle Dark / Light Mode  
+
+📎 File: `UseCaseDiagram.io`
+
+📌 Class Diagram
+
+Main classes represented in the system:
+• User  
+• SkillOffer  
+• Profile  
+• Admin  
+
+Key Relationships:
+• User creates SkillOffer  
+• User has Profile  
+• Admin manages Users and SkillOffers  
+
+📎 File: `ClassDiagram.io`
+
+────────────────────────────────────
+
+▶️ HOW TO RUN THE PROJECT
+
+📌 Using Expo Snack
+
+1. Open **https://snack.expo.dev** in your browser  
+2. Create a new Snack  
+3. Copy and paste the `App.js` code from this repository  
+4. Click **Run**  
+5. Scan the QR code using the **Expo Go** app on your mobile device  
+
+🔐 Dummy Login Credentials  
+• Email: `8628@student.com`  
+• Password: `abasyn123`  
+────────────────────────────────────
+
