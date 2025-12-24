@@ -103,7 +103,7 @@ React Native / Full-Stack Developer
 
 📜 NOTE
 
-This activity was completed for educational and learning purposes** to understand real-world freelancing workflows, bidding strategies, and market competition.
+This activity was completed for educational and learning purposes to understand real-world freelancing workflows, bidding strategies, and market competition.
 
 ────────────────────────────────────
 
