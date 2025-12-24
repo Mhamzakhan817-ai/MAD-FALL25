@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+☕📱 COFFEE SHOP MOBILE APPLICATION
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+────────────────────────────────────
 
-## Get started
+📌 PROJECT OVERVIEW
 
-1. Install dependencies
+The Coffee Shop Mobile Application is a full-stack mobile application developed using React Native for the frontend and Node.js with Express for the backend.
+It connects to a MongoDB database to dynamically fetch and display coffee menu items.
 
-   ```bash
-   npm install
-   ```
+The application allows users to view all coffee products, check stock availability, and fetch a random in-stock item through backend API integration.
+This project demonstrates complete frontend–backend communication in a mobile environment.
 
-2. Start the app
+────────────────────────────────────
 
-   ```bash
-   npx expo start
-   ```
+🚀 CORE FEATURES
 
-In the output, you'll find options to open the app in a
+✔ Clean and user-friendly mobile interface  
+✔ Dynamic coffee menu listing from database  
+✔ Stock status display (In Stock / Out of Stock)  
+✔ Random coffee item generator  
+✔ Backend REST API integration  
+✔ MongoDB database connectivity  
+✔ Real-time data fetching using Fetch API  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+────────────────────────────────────
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🛠️ TECHNOLOGY STACK
 
-## Get a fresh project
+📱 Frontend  
+• React Native  
+• JavaScript  
+• Expo  
+• React Native UI Components  
 
-When you're ready, run:
+🖥️ Backend  
+• Node.js  
+• Express.js  
 
-```bash
-npm run reset-project
-```
+🗄️ Database  
+• MongoDB  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+────────────────────────────────────
 
-## Learn more
+▶️ APPLICATION DEMO
 
-To learn more about developing your project with Expo, look at the following resources:
+🎥 The application fetches live data from the backend and displays it in a styled mobile UI.
+Users can view the full coffee menu and generate a random in-stock item using the provided button.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+(Backend must be running locally for full functionality.)
 
-## Join the community
+────────────────────────────────────
 
-Join our community of developers creating universal apps.
+📦 APK FILE
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+✔ APK build can be generated using Expo or EAS  
+✔ Suitable for Android testing and demonstration  
+✔ Backend must be accessible over local network or deployed server  
+
+────────────────────────────────────
