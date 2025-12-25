@@ -211,7 +211,7 @@ Links are provided inside individual project folders.
 
 ────────────────────────────────────
 
-👩‍💻 AUTHOR:
+🧑‍💻 AUTHOR:
 
 Muhammed Hamza Khan
 
